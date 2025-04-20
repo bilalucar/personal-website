@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 const title = 'Bilal Uçar - Front-end Developer | JavaScript | Angular';
@@ -41,6 +42,7 @@ export default function RootLayout({
     <html lang='tr'>
       <body>{children}</body>
       <GoogleAnalytics gaId='G-6JSN30ZXWX' />
+      <Analytics />
     </html>
   );
 }

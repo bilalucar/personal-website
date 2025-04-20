@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 const title = 'Bilal Uçar - Front-end Developer | JavaScript | Angular';
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang='tr'>
       <body>{children}</body>
+      <GoogleAnalytics gaId='G-6JSN30ZXWX' />
     </html>
   );
 }
